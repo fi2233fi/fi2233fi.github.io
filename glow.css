@@ -81,12 +81,15 @@ h2 {
   line-height: 1.85;
 }
 
-/* Section Wrappers */
 .section-wrapper {
-  background-color: #f4f1ed;
+  background-color: #f7f5f3;
   padding: 4rem 0;
-  border-top: 1px solid #e2dcd5;
-  border-bottom: 1px solid #e2dcd5;
+  border-top: 1px solid #e3ded8;
+  border-bottom: 1px solid #e3ded8;
+}
+
+.section-wrapper.alt-bg {
+  background-color: #dceae5; /* muted green-blue */
 }
 
 /* Grid layout */
