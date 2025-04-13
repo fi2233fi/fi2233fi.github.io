@@ -185,4 +185,7 @@ footer {
 .floating-contact {
   display: none;
 }
+body {
+  background-color: plum !important;
+}
 
