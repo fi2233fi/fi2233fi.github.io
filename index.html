@@ -3,133 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fatima Iqbal | Data Science Portfolio</title>
-<link rel="stylesheet" href="glow.css?v=1.3.4">
+  <title>Fatima Iqbal Portfolio</title>
+  <link rel="stylesheet" href="glow.css?v=1.3.5" />
 </head>
 <body>
-  <header class="hero">
-    <img src="profile.jpg" alt="Fatima Iqbal" class="profile" />
-    <h1>Fatima Iqbal</h1>
-    <p>AI & Data Science | Machine Learning | Business & Marketing Insights</p>
-    <div class="cta">
-      <a href="Fatima_Iqbal_Resume.pdf" download>📄 Download Resume</a>
-      <a href="#contact">💌 Contact Me</a>
+  <section class="hero">
+    <div class="container">
+      <img src="profile.jpg" alt="Fatima Iqbal" class="profile" />
+      <h1>Fatima Iqbal</h1>
+      <p>AI & Data Science | Machine Learning | Business & Marketing Insights</p>
+      <div class="cta">
+        <a href="Fatima_Iqbal_Resume.pdf" target="_blank">📄 Download Resume</a>
+        <a href="#contact">💌 Contact Me</a>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main class="container">
-    <section id="about">
+  <section id="about">
+    <div class="container">
       <h2>About Me</h2>
       <p>
-        I’m a graduate student pursuing an M.S. in Data Science (St. John’s University, graduating May 2025) with a background in digital marketing, English, and communications. My unique strength lies in combining technical knowledge with strategic insight. I build impactful, AI-powered tools and dashboards that help businesses make data-driven decisions. Whether it’s forecasting demand, optimizing marketing, or analyzing risk, I use data to tell clear, actionable stories.
+        I’m a graduate student in Data Science (St. John’s University, MS ‘25) with a background in digital marketing, English, and communications.
+        I combine machine learning with business intuition to build impactful, elegant solutions that help people and organizations make better decisions.
+        Let’s turn data into clarity — and clarity into action.
       </p>
-    </section>
+    </div>
+  </section>
 
-    <section>
+  <div class="section-wrapper">
+    <div class="container">
       <h2>End-to-End Projects</h2>
       <div class="grid">
-        <div class="card">
-          <img src="heart.jpg" alt="Heart Disease Prediction" />
+        <div class="card reveal">
+          <img src="heart.jpg" alt="Heart Disease App"/>
           <h3>Heart Disease Risk Prediction</h3>
-          <p>
-            An AI-powered web app that predicts the likelihood of heart disease using clinical patient data. Built with Python, Streamlit, and trained on real-world health datasets, this tool demonstrates predictive modeling for healthcare decisions.
-          </p>
+          <p>AI app using clinical data to predict heart disease likelihood.</p>
           <a href="https://github.com/fi2233fi/heart-disease-prediction" target="_blank">View on GitHub</a>
         </div>
-
-        <div class="card">
-          <img src="bike.jpg" alt="Seoul Bike Sharing" />
+        <div class="card reveal">
+          <img src="bike.jpg" alt="Seoul Bike Sharing"/>
           <h3>Seoul Bike Sharing Forecast</h3>
-          <p>
-            A Streamlit app forecasting bike rental demand based on weather, temperature, and time variables. Combines feature engineering and regression to solve a real transportation optimization problem.
-          </p>
+          <p>Streamlit app forecasting demand based on weather + time data.</p>
           <a href="https://github.com/fi2233fi/seoul-bike-sharing-app" target="_blank">View on GitHub</a>
         </div>
-
-        <div class="card">
-          <img src="arima.jpg" alt="Demand Forecasting (ARIMA)" />
+        <div class="card reveal">
+          <img src="arima.jpg" alt="Demand Forecasting"/>
           <h3>Logistics Demand Forecasting</h3>
-          <p>
-            Used ARIMA time series modeling to predict future demand for supply chain optimization. Includes visualizations and insights for seasonal trends and business planning.
-          </p>
+          <p>Time series modeling with ARIMA for operations optimization.</p>
           <a href="https://github.com/fi2233fi/demand-forecasting-arima" target="_blank">View on GitHub</a>
         </div>
-
-        <div class="card">
-          <img src="claims.jpg" alt="Healthcare Claims Pipeline" />
+        <div class="card reveal">
+          <img src="claims.jpg" alt="Healthcare Claims Pipeline"/>
           <h3>Healthcare Claims Data Pipeline</h3>
-          <p>
-            Built an end-to-end ETL pipeline using AWS S3, Redshift, and dbt to clean, transform, and visualize healthcare insurance claim data. Resulted in faster insights and automated reporting.
-          </p>
+          <p>ETL pipeline with Redshift + dbt, built for health data analysis.</p>
           <a href="https://github.com/fi2233fi/healthcare-claims-pipeline" target="_blank">View on GitHub</a>
         </div>
-
-        <div class="card">
-          <img src="ecom.jpg" alt="Ecommerce ETL + Dashboard" />
+        <div class="card reveal">
+          <img src="ecom.jpg" alt="E-commerce Project"/>
           <h3>E-Commerce ETL & Dashboard</h3>
-          <p>
-            Processed and visualized product sales and inventory using an automated AWS ETL pipeline and Power BI dashboard. Optimized for decision-makers to track KPIs and product trends.
-          </p>
+          <p>End-to-end pipeline with AWS S3/Redshift and Power BI dashboard.</p>
           <a href="https://github.com/fi2233fi/ecommerce-etl-powerbi-dashboard" target="_blank">View on GitHub</a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <section>
+  <div class="section-wrapper alt-bg">
+    <div class="container">
       <h2>Dashboards</h2>
       <div class="grid">
-        <div class="card">
-          <img src="marketing.jpg" alt="Marketing Insights Dashboard" />
+        <div class="card reveal">
+          <img src="marketing.jpg" alt="Marketing Dashboard"/>
           <h3>Marketing Performance</h3>
-          <p>
-            Analyzed campaign performance and conversions with a sleek Power BI dashboard. Segmented data by audience and campaign to uncover trends and drive strategy.
-          </p>
+          <p>Power BI dashboard analyzing campaign reach and conversion.</p>
           <a href="https://github.com/fi2233fi/marketing_dashboard" target="_blank">View on GitHub</a>
         </div>
-
-        <div class="card">
-          <img src="credit.jpg" alt="Credit Risk Dashboard" />
+        <div class="card reveal">
+          <img src="credit.jpg" alt="Credit Risk Dashboard"/>
           <h3>Credit Risk Analysis</h3>
-          <p>
-            Built a finance-focused Power BI dashboard analyzing loan default risks. Highlights credit score distributions, approval rates, and borrower insights.
-          </p>
+          <p>Finance dashboard showing loan & credit risk KPIs.</p>
           <a href="https://github.com/fi2233fi/credit_risk_dashboard" target="_blank">View on GitHub</a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <section id="contact">
+  <section id="contact">
+    <div class="container">
       <h2>Contact</h2>
-      <p>Feel free to reach out via <a href="mailto:fi.fatimaiqbal.fi@gmail.com">fi.fatimaiqbal.fi@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/fatimaiqbal99" target="_blank">LinkedIn</a>.</p>
-    </section>
-  </main>
-
-  <a class="floating-contact" href="mailto:fi.fatimaiqbal.fi@gmail.com">Let's Connect →</a>
+      <p>
+        Feel free to reach out via <a href="mailto:fi.fatimaiqbal.fi@gmail.com">fi.fatimaiqbal.fi@gmail.com</a> or connect on
+        <a href="https://www.linkedin.com/in/fatimaiqbal99" target="_blank">LinkedIn</a>.
+      </p>
+    </div>
+  </section>
 
   <footer>
     <p>© 2025 Fatima Iqbal. All rights reserved.</p>
   </footer>
-
-  <script>
-    const cards = document.querySelectorAll('.card');
-    const reveal = () => {
-      cards.forEach(card => {
-        const top = card.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
-          card.classList.add('reveal');
-        }
-      });
-    };
-    window.addEventListener('scroll', reveal);
-    window.addEventListener('load', reveal);
-  </script>
 </body>
 </html>
-
-<div class="section-wrapper alt-bg">
-  <h2>Dashboards</h2>
-  <div class="grid">
-    <!-- cards -->
-  </div>
-</div>
 
