@@ -14,7 +14,7 @@ body {
   line-height: 1.7;
 }
 a {
-  color: #7b8caa;
+  color: #6a7e9c;
   text-decoration: none;
 }
 .container {
@@ -26,7 +26,7 @@ a {
 
 /* Header */
 .hero {
-  background: linear-gradient(to right, #f0eeeb, #f5f4f2);
+  background: linear-gradient(to right, #f0eeeb, #f7f6f3);
   text-align: center;
   padding: 5rem 0 2rem;
 }
@@ -36,7 +36,7 @@ a {
   object-fit: cover;
   margin-bottom: 1.5rem;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border: 3px solid #c1b8ae;
+  border: 3px solid #d6c6b5;
   border-radius: 14px;
 }
 h1 {
@@ -48,7 +48,7 @@ h1 {
   display: inline-block;
   margin: 0.5rem;
   padding: 0.75rem 1.4rem;
-  background-color: #7b8caa;
+  background-color: #6a7e9c;
   color: #fff;
   border-radius: 6px;
   transition: 0.3s;
@@ -56,7 +56,7 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 .cta a:hover {
-  background-color: #617493;
+  background-color: #546683;
   color: #fff;
 }
 
@@ -113,8 +113,8 @@ h2 {
   transition: 0.3s ease;
 }
 .card img:hover {
-  border-color: #7b8caa;
-  box-shadow: 0 0 12px rgba(123, 140, 170, 0.15);
+  border-color: #a1887f;
+  box-shadow: 0 0 12px rgba(161, 136, 127, 0.15);
 }
 .card h3 {
   color: #2e2e2e;
@@ -129,7 +129,7 @@ h2 {
 .card a {
   display: inline-block;
   margin-top: 0.8rem;
-  background-color: #7b8caa;
+  background-color: #6a7e9c;
   color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
@@ -138,7 +138,7 @@ h2 {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 .card a:hover {
-  background-color: #617493;
+  background-color: #546683;
   color: #fff;
 }
 
@@ -147,7 +147,7 @@ h2 {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background: #7b8caa;
+  background: #6a7e9c;
   color: #fff;
   padding: 0.8rem 1rem;
   border-radius: 50px;
@@ -157,7 +157,7 @@ h2 {
   transition: all 0.3s ease;
 }
 .floating-contact:hover {
-  background: #617493;
+  background: #546683;
   transform: scale(1.05);
 }
 
@@ -167,13 +167,13 @@ h2 {
   margin-top: 4rem;
 }
 #contact a {
-  color: #7b8caa;
+  color: #6a7e9c;
   text-decoration: underline;
 }
 
 /* Footer */
 footer {
-  background-color: #eeeae4;
+  background-color: #f0eeeb;
   color: #555;
   text-align: center;
   padding: 1.5rem 0;
