@@ -191,3 +191,21 @@ footer {
   font-size: 0.95rem;
 }
 
+/* REMOVE Floating Contact Button */
+.floating-contact {
+  display: none;
+}
+
+/* Enhanced Contact Section */
+#contact {
+  background-color: #eae6e2;
+  border-top: 1px solid #dad2ca;
+  padding: 3rem 0;
+  text-align: center;
+}
+#contact a {
+  color: #6a7e9c;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
