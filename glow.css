@@ -81,15 +81,15 @@ h2 {
   line-height: 1.85;
 }
 
+/* Section Wrappers */
 .section-wrapper {
   background-color: #f7f5f3;
   padding: 4rem 0;
   border-top: 1px solid #e3ded8;
   border-bottom: 1px solid #e3ded8;
 }
-
 .section-wrapper.alt-bg {
-  background-color: #dceae5; /* muted green-blue */
+  background-color: #dceae5;
 }
 
 /* Grid layout */
@@ -119,7 +119,7 @@ h2 {
 }
 .card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 280px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -155,33 +155,17 @@ h2 {
   background-color: #546683;
 }
 
-/* Floating Contact Button */
-.floating-contact {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #6a7e9c;
-  color: #fff;
-  padding: 0.8rem 1rem;
-  border-radius: 50px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  font-weight: 600;
-  z-index: 999;
-  transition: all 0.3s ease;
-}
-.floating-contact:hover {
-  background: #546683;
-  transform: scale(1.05);
-}
-
 /* Contact */
 #contact {
+  background-color: #eae6e2;
+  border-top: 1px solid #dad2ca;
+  padding: 3rem 0;
   text-align: center;
-  margin-top: 4rem;
 }
 #contact a {
   color: #6a7e9c;
   text-decoration: underline;
+  font-weight: 500;
 }
 
 /* Footer */
@@ -194,21 +178,8 @@ footer {
   font-size: 0.95rem;
 }
 
-/* REMOVE Floating Contact Button */
+/* REMOVE Floating Button */
 .floating-contact {
   display: none;
-}
-
-/* Enhanced Contact Section */
-#contact {
-  background-color: #eae6e2;
-  border-top: 1px solid #dad2ca;
-  padding: 3rem 0;
-  text-align: center;
-}
-#contact a {
-  color: #6a7e9c;
-  text-decoration: underline;
-  font-weight: 500;
 }
 
