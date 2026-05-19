@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Fatima Iqbal</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ivory:#FAF7F2;--warm-white:#F5F1EA;--gold:#C4A55A;--gold-light:#E8D5A3;--gold-dark:#9A7A35;--crimson:#8B2635;--crimson-light:#C4525F;--crimson-pale:#F5E8EA;--sage:#5C7A65;--sage-light:#A8C4AE;--sage-pale:#EAF0EB;--dusty-rose:#C4788A;--dusty-rose-pale:#F7EEF0;--ink:#1C1812;--muted:#8A7E6A;--border:rgba(196,165,90,0.25);--border-soft:rgba(196,165,90,0.12)}
+html,body{min-height:100vh;background:var(--ivory);font-family:'DM Sans',sans-serif;color:var(--ink);overflow-x:hidden}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.75rem 5vw;border-bottom:0.5px solid var(--border-soft)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;letter-spacing:0.15em;color:var(--ink);text-transform:uppercase;text-decoration:none}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover{color:var(--crimson)}
+.page-header{padding:4rem 5vw 3rem;max-width:1200px;margin:0 auto}
+.back-link{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;margin-bottom:2rem;transition:color 0.2s}
+.back-link:hover{color:var(--crimson)}
+.page-eyebrow{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--crimson);margin-bottom:1rem;display:flex;align-items:center;gap:0.75rem}
+.page-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--crimson)}
+.page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:300;line-height:1.1;color:var(--ink)}
+.page-title em{font-style:italic;color:var(--crimson)}
+.projects-grid{padding:0 5vw 6rem;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.project-card{text-decoration:none;display:block;cursor:pointer;transition:all 0.35s ease;position:relative}
+.project-color-bar{height:4px;width:100%;transition:height 0.3s ease}
+.project-card:hover .project-color-bar{height:6px}
+.project-body{padding:2.5rem;border:0.5px solid var(--border);border-top:none;background:var(--warm-white);transition:background 0.3s}
+.project-card:hover .project-body{background:#FFFDF8}
+.project-number{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;line-height:1;margin-bottom:1rem;opacity:0.2;transition:opacity 0.3s}
+.project-card:hover .project-number{opacity:0.45}
+.project-tag{display:inline-block;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;padding:0.3rem 0.75rem;margin-bottom:1rem}
+.project-title{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:400;color:var(--ink);line-height:1.2;margin-bottom:0.85rem}
+.project-desc{font-size:0.83rem;line-height:1.8;color:var(--muted);font-weight:300;margin-bottom:1.75rem}
+.project-pills{display:flex;flex-wrap:wrap;gap:0.5rem}
+.pill{font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.7rem;border:0.5px solid var(--border);color:var(--muted)}
+.project-arrow{position:absolute;bottom:2rem;right:2rem;font-size:1.1rem;transition:all 0.3s;color:var(--gold-light)}
+.project-card:hover .project-arrow{transform:translate(3px,-3px);color:var(--gold)}
+footer{border-top:0.5px solid var(--border-soft);padding:2.5rem 5vw;display:flex;justify-content:space-between;align-items:center}
+.footer-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.9rem;color:var(--muted)}
+.footer-links{display:flex;gap:2rem}
+.footer-links a{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:var(--crimson)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.page-header{animation:fadeUp 0.7s ease forwards}
+.project-card:nth-child(1){animation:fadeUp 0.6s 0.1s ease both}
+.project-card:nth-child(2){animation:fadeUp 0.6s 0.2s ease both}
+.project-card:nth-child(3){animation:fadeUp 0.6s 0.3s ease both}
+.project-card:nth-child(4){animation:fadeUp 0.6s 0.4s ease both}
+.project-card:nth-child(5){animation:fadeUp 0.6s 0.5s ease both}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Fatima Iqbal</a>
+  <ul class="nav-links">
+    <li><a href="index.html#work">Work</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="https://linkedin.com/in/fatimaiqbal99" target="_blank">LinkedIn</a></li>
+    <li><a href="https://github.com/fi2233fi" target="_blank">GitHub</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <p class="page-eyebrow">Portfolio</p>
+  <h1 class="page-title">Data &amp; Analytics <em>Projects</em></h1>
+</div>
+
+<div class="projects-grid">
+
+  <a href="https://github.com/fi2233fi/claims-denial-analysis" target="_blank" class="project-card">
+    <div class="project-color-bar" style="background:linear-gradient(90deg,var(--crimson),var(--crimson-light))"></div>
+    <div class="project-body">
+      <div class="project-number" style="color:var(--crimson)">01</div>
+      <span class="project-tag" style="background:var(--crimson-pale);color:var(--crimson)">Healthcare · Excel</span>
+      <h2 class="project-title">Insurance Claims Denial Analysis</h2>
+      <p class="project-desc">Analysis of 250 claims across six payers identifying denial patterns, revenue at risk, and operational gaps in a multi-provider outpatient rehab practice.</p>
+      <div class="project-pills">
+        <span class="pill">Excel</span>
+        <span class="pill">Pivot Tables</span>
+        <span class="pill">RCM</span>
+        <span class="pill">Dashboard</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+  </a>
+
+  <a href="https://github.com/fi2233fi/fraud-detection-analysis" target="_blank" class="project-card">
+    <div class="project-color-bar" style="background:linear-gradient(90deg,var(--gold-dark),var(--gold))"></div>
+    <div class="project-body">
+      <div class="project-number" style="color:var(--gold-dark)">02</div>
+      <span class="project-tag" style="background:#FBF5E8;color:var(--gold-dark)">Finance · Python</span>
+      <h2 class="project-title">Credit Card Fraud Detection</h2>
+      <p class="project-desc">Analysis of 284,807 real credit card transactions to identify fraud patterns and evaluate where amount-based detection breaks down.</p>
+      <div class="project-pills">
+        <span class="pill">Python</span>
+        <span class="pill">Pandas</span>
+        <span class="pill">Scikit-learn</span>
+        <span class="pill">Anomaly Detection</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+  </a>
+
+  <a href="https://github.com/fi2233fi/healthcare-claims-analysis" target="_blank" class="project-card">
+    <div class="project-color-bar" style="background:linear-gradient(90deg,var(--sage),var(--sage-light))"></div>
+    <div class="project-body">
+      <div class="project-number" style="color:var(--sage)">03</div>
+      <span class="project-tag" style="background:var(--sage-pale);color:var(--sage)">Healthcare · Python</span>
+      <h2 class="project-title">Healthcare Claims Data Quality</h2>
+      <p class="project-desc">Python and Power BI analysis of 202,000+ Medicare claims identifying $10.6B in reconciliation failures and $3.2M in actionable payment errors.</p>
+      <div class="project-pills">
+        <span class="pill">Python</span>
+        <span class="pill">Power BI</span>
+        <span class="pill">Medicare</span>
+        <span class="pill">Data Quality</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+  </a>
+
+  <a href="https://github.com/fi2233fi/marketing_dashboard" target="_blank" class="project-card">
+    <div class="project-color-bar" style="background:linear-gradient(90deg,var(--dusty-rose),#E8A0B0)"></div>
+    <div class="project-body">
+      <div class="project-number" style="color:var(--dusty-rose)">04</div>
+      <span class="project-tag" style="background:var(--dusty-rose-pale);color:var(--dusty-rose)">Marketing · Power BI</span>
+      <h2 class="project-title">Marketing &amp; Business Insights</h2>
+      <p class="project-desc">Power BI dashboard analyzing customer purchasing behavior, campaign performance, and sales channel trends across 1,999 transactions.</p>
+      <div class="project-pills">
+        <span class="pill">Power BI</span>
+        <span class="pill">DAX</span>
+        <span class="pill">Campaign Analytics</span>
+        <span class="pill">Retention</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+  </a>
+
+  <a href="https://github.com/fi2233fi/credit_risk_dashboard" target="_blank" class="project-card">
+    <div class="project-color-bar" style="background:linear-gradient(90deg,#5C6A7A,#8A9AAA)"></div>
+    <div class="project-body">
+      <div class="project-number" style="color:#5C6A7A">05</div>
+      <span class="project-tag" style="background:#EEF0F2;color:#5C6A7A">Finance · Power BI</span>
+      <h2 class="project-title">Credit Risk Analysis Dashboard</h2>
+      <p class="project-desc">Power BI dashboard analyzing 32,000+ loan records to identify risk patterns across borrower demographics, loan purpose, and repayment terms.</p>
+      <div class="project-pills">
+        <span class="pill">Power BI</span>
+        <span class="pill">DAX</span>
+        <span class="pill">Risk Modeling</span>
+        <span class="pill">Finance</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+  </a>
+
+</div>
+
+<footer>
+  <span class="footer-name">Fatima Iqbal, 2026</span>
+  <div class="footer-links">
+    <a href="https://github.com/fi2233fi" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/fatimaiqbal99" target="_blank">LinkedIn</a>
+    <a href="mailto:fi.fatimaiqbal.fi@gmail.com">Email</a>
+  </div>
+</footer>
+
+</body>
+</html>

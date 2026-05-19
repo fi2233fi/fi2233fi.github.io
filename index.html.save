@@ -116,7 +116,7 @@ footer{border-top:0.5px solid var(--border-soft);padding:2.5rem 5vw;display:flex
     </div>
     <div class="cta-row">
       <a href="#work" class="btn btn-primary">View Work <span>→</span></a>
-      <a href="mailto:fi.fatimaiqbal.fi@gmail.com" class="btn btn-outline">Get in Touch <span>→</span></a>
+      <a href="https://linkedin.com/in/fatimaiqbal99" target="_blank" class="btn btn-outline">Connect <span>→</span></a>
     </div>
   </div>
   <div class="hero-image-wrap">
@@ -148,92 +148,3 @@ footer{border-top:0.5px solid var(--border-soft);padding:2.5rem 5vw;display:flex
     <div class="section-line"></div>
   </div>
   <div class="work-grid">
-    <a href="projects.html" class="work-card">
-      <div class="card-color-bar" style="background:linear-gradient(90deg,var(--crimson),var(--dusty-rose))"></div>
-      <div class="card-body">
-        <div class="card-number" style="color:var(--crimson)">01</div>
-        <span class="card-tag" style="background:var(--crimson-pale);color:var(--crimson)">Analytics Projects</span>
-        <h2 class="card-title">Data &amp; Analytics Portfolio</h2>
-        <p class="card-desc">Healthcare claims analysis, credit risk modeling, fraud detection, and marketing intelligence. End-to-end pipelines built with Python, Power BI, AWS, and dbt.</p>
-        <div class="card-pills">
-          <span class="pill">Python</span>
-          <span class="pill">Power BI</span>
-          <span class="pill">AWS</span>
-          <span class="pill">dbt</span>
-          <span class="pill">Healthcare</span>
-        </div>
-        <span class="card-arrow">↗</span>
-      </div>
-    </a>
-    <a href="https://github.com/fi2233fi/sql-analytics-portfolio" target="_blank" class="work-card">
-      <div class="card-color-bar" style="background:linear-gradient(90deg,var(--sage),var(--sage-light))"></div>
-      <div class="card-body">
-        <div class="card-number" style="color:var(--sage)">02</div>
-        <span class="card-tag" style="background:var(--sage-pale);color:var(--sage)">SQL Portfolio</span>
-        <h2 class="card-title">SQL Analytics Portfolio</h2>
-        <p class="card-desc">12 queries across healthcare, retail, finance, and operations — each executed against a live MySQL database with documented real findings.</p>
-        <div class="card-pills">
-          <span class="pill">MySQL</span>
-          <span class="pill">CTEs</span>
-          <span class="pill">Window Fns</span>
-          <span class="pill">RCM</span>
-          <span class="pill">Aggregations</span>
-        </div>
-        <span class="card-arrow">↗</span>
-      </div>
-    </a>
-  </div>
-  <div class="domains-strip">
-    <div class="domain-chip" style="border-color:rgba(139,38,53,0.2);background:var(--crimson-pale)">
-      <span class="domain-icon">🏥</span>
-      <span class="domain-name" style="color:var(--crimson)">Healthcare</span>
-    </div>
-    <div class="domain-chip" style="border-color:rgba(196,165,90,0.3);background:#FBF5E8">
-      <span class="domain-icon">💳</span>
-      <span class="domain-name" style="color:var(--gold-dark)">Finance</span>
-    </div>
-    <div class="domain-chip" style="border-color:rgba(92,122,101,0.2);background:var(--sage-pale)">
-      <span class="domain-icon">🛒</span>
-      <span class="domain-name" style="color:var(--sage)">Retail</span>
-    </div>
-    <div class="domain-chip" style="border-color:rgba(196,120,138,0.2);background:var(--dusty-rose-pale)">
-      <span class="domain-icon">📊</span>
-      <span class="domain-name" style="color:var(--dusty-rose)">Operations</span>
-    </div>
-  </div>
-</section>
-
-<div class="about-band" id="about">
-  <div class="about-inner">
-    <div>
-      <h2 class="about-heading">A little more <em>about<br>the work.</em></h2>
-    </div>
-    <div>
-      <p class="about-text">Started in digital marketing, moved into data operations managing 20+ concurrent client migrations at Housecall Pro, and now deep in healthcare revenue cycle at Masoom Rehab. Each role sharpened a different skill — storytelling, data integrity, and operational pattern recognition. The throughline has always been finding what the data is actually saying before anyone else does.</p>
-      <div class="edu-row">
-        <div class="edu-item">
-          <p class="edu-degree">M.S. Data Science</p>
-          <p class="edu-school">St. John's University<br>Concentration: Cybersecurity</p>
-          <span class="edu-year">2025</span>
-        </div>
-        <div class="edu-item">
-          <p class="edu-degree">B.B.A. Digital Marketing</p>
-          <p class="edu-school">Baruch College, CUNY<br>Zicklin School of Business</p>
-          <span class="edu-year">2022</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <span class="footer-name">Fatima Iqbal, 2026</span>
-  <div class="footer-links">
-    <a href="https://github.com/fi2233fi" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/fatimaiqbal99" target="_blank">LinkedIn</a>
-    <a href="mailto:fi.fatimaiqbal.fi@gmail.com">Email</a>
-  </div>
-</footer>
-
-</body>
-</html>
