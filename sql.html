@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SQL Portfolio | Fatima Iqbal</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ivory:#FAF7F2;--warm-white:#F5F1EA;--gold:#C4A55A;--gold-light:#E8D5A3;--gold-dark:#9A7A35;--crimson:#8B2635;--crimson-light:#C4525F;--crimson-pale:#F5E8EA;--sage:#5C7A65;--sage-light:#A8C4AE;--sage-pale:#EAF0EB;--dusty-rose:#C4788A;--dusty-rose-pale:#F7EEF0;--ink:#1C1812;--muted:#8A7E6A;--border:rgba(196,165,90,0.25);--border-soft:rgba(196,165,90,0.12)}
+html,body{min-height:100vh;background:var(--ivory);font-family:'DM Sans',sans-serif;color:var(--ink);overflow-x:hidden}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.75rem 5vw;border-bottom:0.5px solid var(--border-soft)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;letter-spacing:0.15em;color:var(--ink);text-transform:uppercase;text-decoration:none}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover{color:var(--crimson)}
+.page-header{padding:4rem 5vw 3rem;max-width:1200px;margin:0 auto}
+.back-link{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;margin-bottom:2rem;transition:color 0.2s}
+.back-link:hover{color:var(--crimson)}
+.page-eyebrow{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;display:flex;align-items:center;gap:0.75rem}
+.page-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--sage)}
+.page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:300;line-height:1.1;color:var(--ink);margin-bottom:1rem}
+.page-title em{font-style:italic;color:var(--sage)}
+.page-desc{font-size:0.9rem;line-height:1.8;color:var(--muted);font-weight:300;max-width:560px;margin-bottom:0.75rem}
+.repo-link{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--sage);text-decoration:none;border-bottom:0.5px solid var(--sage-light);padding-bottom:2px;transition:color 0.2s}
+.repo-link:hover{color:var(--sage-light)}
+.domains-grid{padding:0 5vw 6rem;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.domain-card{text-decoration:none;display:block;cursor:pointer;transition:all 0.35s ease;position:relative}
+.domain-color-bar{height:4px;width:100%;transition:height 0.3s ease}
+.domain-card:hover .domain-color-bar{height:6px}
+.domain-body{padding:2.5rem;border:0.5px solid var(--border);border-top:none;background:var(--warm-white);transition:background 0.3s}
+.domain-card:hover .domain-body{background:#FFFDF8}
+.domain-number{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;line-height:1;margin-bottom:1rem;opacity:0.2;transition:opacity 0.3s}
+.domain-card:hover .domain-number{opacity:0.45}
+.domain-tag{display:inline-block;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;padding:0.3rem 0.75rem;margin-bottom:1rem}
+.domain-title{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:400;color:var(--ink);line-height:1.2;margin-bottom:0.85rem}
+.domain-desc{font-size:0.83rem;line-height:1.8;color:var(--muted);font-weight:300;margin-bottom:1.75rem}
+.query-list{display:flex;flex-direction:column;gap:0.4rem}
+.query-item{font-size:0.72rem;color:var(--muted);padding:0.4rem 0;border-bottom:0.5px solid var(--border-soft);display:flex;align-items:center;gap:0.5rem}
+.query-item::before{content:'';display:block;width:4px;height:4px;border-radius:50%;background:var(--gold-light);flex-shrink:0}
+.domain-arrow{position:absolute;bottom:2rem;right:2rem;font-size:1.1rem;transition:all 0.3s;color:var(--gold-light)}
+.domain-card:hover .domain-arrow{transform:translate(3px,-3px);color:var(--gold)}
+footer{border-top:0.5px solid var(--border-soft);padding:2.5rem 5vw;display:flex;justify-content:space-between;align-items:center}
+.footer-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.9rem;color:var(--muted)}
+.footer-links{display:flex;gap:2rem}
+.footer-links a{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:var(--crimson)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.page-header{animation:fadeUp 0.7s ease forwards}
+.domain-card:nth-child(1){animation:fadeUp 0.6s 0.1s ease both}
+.domain-card:nth-child(2){animation:fadeUp 0.6s 0.2s ease both}
+.domain-card:nth-child(3){animation:fadeUp 0.6s 0.3s ease both}
+.domain-card:nth-child(4){animation:fadeUp 0.6s 0.4s ease both}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Fatima Iqbal</a>
+  <ul class="nav-links">
+    <li><a href="index.html#work">Work</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="https://linkedin.com/in/fatimaiqbal99" target="_blank">LinkedIn</a></li>
+    <li><a href="https://github.com/fi2233fi" target="_blank">GitHub</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <p class="page-eyebrow">SQL Portfolio</p>
+  <h1 class="page-title">12 Queries. 4 <em>Domains.</em></h1>
+  <p class="page-desc">Every query was written and executed against a live MySQL database. Actual results are documented in each file. Click any domain to browse the queries on GitHub.</p>
+  <a href="https://github.com/fi2233fi/sql-analytics-portfolio" target="_blank" class="repo-link">View full repo ↗</a>
+</div>
+
+<div class="domains-grid">
+
+  <a href="https://github.com/fi2233fi/sql-analytics-portfolio/tree/main/healthcare" target="_blank" class="domain-card">
+    <div class="domain-color-bar" style="background:linear-gradient(90deg,var(--crimson),var(--crimson-light))"></div>
+    <div class="domain-body">
+      <div class="domain-number" style="color:var(--crimson)">01</div>
+      <span class="domain-tag" style="background:var(--crimson-pale);color:var(--crimson)">Healthcare · 4 Queries</span>
+      <h2 class="domain-title">Revenue Cycle Management</h2>
+      <p class="domain-desc">Denial patterns, claims aging, revenue recovery, and provider performance across a multi-payer outpatient practice.</p>
+      <div class="query-list">
+        <div class="query-item">Denial rate by payer</div>
+        <div class="query-item">Claims aging analysis</div>
+        <div class="query-item">Denied revenue by denial code</div>
+        <div class="query-item">Provider performance comparison</div>
+      </div>
+      <span class="domain-arrow">↗</span>
+    </div>
+  </a>
+
+  <a href="https://github.com/fi2233fi/sql-analytics-portfolio/tree/main/retail" target="_blank" class="domain-card">
+    <div class="domain-color-bar" style="background:linear-gradient(90deg,var(--gold-dark),var(--gold))"></div>
+    <div class="domain-body">
+      <div class="domain-number" style="color:var(--gold-dark)">02</div>
+      <span class="domain-tag" style="background:#FBF5E8;color:var(--gold-dark)">Retail · 3 Queries</span>
+      <h2 class="domain-title">Sales &amp; Customer Analytics</h2>
+      <p class="domain-desc">Revenue by product category, top customer identification, and monthly trend analysis for a specialty food retailer.</p>
+      <div class="query-list">
+        <div class="query-item">Revenue by product category</div>
+        <div class="query-item">Top customers by revenue</div>
+        <div class="query-item">Monthly revenue trend</div>
+      </div>
+      <span class="domain-arrow">↗</span>
+    </div>
+  </a>
+
+  <a href="https://github.com/fi2233fi/sql-analytics-portfolio/tree/main/finance" target="_blank" class="domain-card">
+    <div class="domain-color-bar" style="background:linear-gradient(90deg,var(--sage),var(--sage-light))"></div>
+    <div class="domain-body">
+      <div class="domain-number" style="color:var(--sage)">03</div>
+      <span class="domain-tag" style="background:var(--sage-pale);color:var(--sage)">Finance · 3 Queries</span>
+      <h2 class="domain-title">Risk &amp; Collections Analysis</h2>
+      <p class="domain-desc">Transaction risk classification, write-off analysis by department, and average days to collect by transaction type.</p>
+      <div class="query-list">
+        <div class="query-item">Transaction risk classification</div>
+        <div class="query-item">Written off revenue by department</div>
+        <div class="query-item">Average days to collect</div>
+      </div>
+      <span class="domain-arrow">↗</span>
+    </div>
+  </a>
+
+  <a href="https://github.com/fi2233fi/sql-analytics-portfolio/tree/main/operations" target="_blank" class="domain-card">
+    <div class="domain-color-bar" style="background:linear-gradient(90deg,var(--dusty-rose),#E8A0B0)"></div>
+    <div class="domain-body">
+      <div class="domain-number" style="color:var(--dusty-rose)">04</div>
+      <span class="domain-tag" style="background:var(--dusty-rose-pale);color:var(--dusty-rose)">Operations · 2 Queries</span>
+      <h2 class="domain-title">Claims &amp; Payer Operations</h2>
+      <p class="domain-desc">High priority open claims worklist and payer reimbursement rate analysis using CTEs and window functions.</p>
+      <div class="query-list">
+        <div class="query-item">High priority open claims</div>
+        <div class="query-item">Payer reimbursement rate analysis</div>
+      </div>
+      <span class="domain-arrow">↗</span>
+    </div>
+  </a>
+
+</div>
+
+<footer>
+  <span class="footer-name">Fatima Iqbal, 2026</span>
+  <div class="footer-links">
+    <a href="https://github.com/fi2233fi" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/fatimaiqbal99" target="_blank">LinkedIn</a>
+    <a href="mailto:fi.fatimaiqbal.fi@gmail.com">Email</a>
+  </div>
+</footer>
+
+</body>
+</html>

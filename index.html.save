@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+nano ~/Downloads/fi2233fi.github.io/index.html
+nano ~/Downloads/fi2233fi.github.io/index.html
+nano ~/Downloads/fi2233fi.github.io/index.html<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -165,7 +167,7 @@ footer{border-top:0.5px solid var(--border-soft);padding:2.5rem 5vw;display:flex
         <span class="card-arrow">↗</span>
       </div>
     </a>
-    <a href="sql.html" class="work-card">
+    <a href="https://github.com/fi2233fi/sql-analytics-portfolio" target="_blank" class="work-card">
       <div class="card-color-bar" style="background:linear-gradient(90deg,var(--sage),var(--sage-light))"></div>
       <div class="card-body">
         <div class="card-number" style="color:var(--sage)">02</div>
